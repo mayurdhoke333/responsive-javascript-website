@@ -1,0 +1,366 @@
+/* font-family: 'Grenze Gotisch', cursive; - navbar-brand */
+
+/* font-family: 'Merienda One', cursive; - body */
+
+/* font-family: 'Monoton', cursive;  -nav-link */
+
+/* font-family: 'Monoton', cursive; - paragrapgh button */
+
+/* font-family: 'Fondamento', cursive; - heading 1 */
+
+body
+{
+    text-align: center;
+}
+#first-section .container-fluid {
+    background: linear-gradient(to right, #2980B9, #6DD5FA, #FFFFFF);
+    padding: 2% 10% 5%;
+    text-align: left;
+}
+
+#first-section .container {
+    text-align: center;
+}
+
+.container-fluid {
+    padding: 5% 10%;
+}
+
+body {
+    color: white;
+    font-family: 'Merienda One', cursive;
+    text-align: center;
+}
+
+.heading {
+    font-family: 'Berkshire Swash', cursive;
+    font-weight: lighter;
+    font-size: 2.8rem;
+    margin: 0 0 2rem 0;
+    background: linear-gradient(to right, #c0392b, #8e44ad, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* NAVIGATION BAR  */
+
+.navbar {
+    margin: 0 0 4rem 0;
+}
+
+.navbar-brand {
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+    /* background: linear-gradient(to right,#544a7d,#ffd452); */
+    background: linear-gradient(to right, #C6FFDD, #FBD786, #ec38bc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-item {
+    font-size: 1rem;
+    margin: 0 10px;
+}
+
+.nav-icon {
+    background: linear-gradient(to right, #FF416C, #FF4B2B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar-toggler:focus {
+    background: #2980B9;
+}
+
+/* SECOND-SECTION  */
+
+#second-section {
+    text-align: center;
+    color: black;
+}
+
+.img1 {
+    display: inline-block;
+}
+
+.dice-image {
+    width: 75%;
+    
+    
+}
+
+.heading2 {
+    margin-bottom: 4.5rem;
+}
+
+.img-heading {
+    margin: 2rem 0 2rem;
+}
+
+.dice-button
+{
+    
+    margin: 2rem 0 2rem;
+    /* outline-width: 0;
+    outline: none;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer; */
+    border: 2px solid lightblue;
+}
+.dice-button:hover .dice-image
+{
+    /* border:none; 
+    outline: none; */
+    
+    
+}
+.pressed
+{
+    /* box-shadow: inset 3px 3px 20px 3px orange; */
+}
+
+/* third-section  */
+#third-section
+.rotating-box
+{
+    
+    width:300px;
+    height:300px;
+    margin:20px auto;
+    perspective: 50rem;
+}
+.single
+{
+    animation: rotate 15s  linear infinite;
+    -webkit-transform-style: preserve-3d;
+}
+.single div
+{
+  
+    position: absolute;
+    
+    
+}
+.single img
+{
+   width:300px;
+   height:300px;
+}
+.front-side
+{
+    transform: translateZ(200px);
+}
+.back-side
+{
+    transform: rotateY(180deg) translateZ(100px);
+}
+.left-side
+{
+    transform: rotateY(90deg) translateX(100px);
+    transform-origin: right;
+}
+.right-side
+{
+    
+    transform: rotateY(-90deg) translateX(-100px);
+    transform-origin: left;
+}
+.top-side
+{
+    transform: rotateX(-90deg) translateY(-200px);
+    transform-origin: top;
+}
+.bottom-side
+{
+    transform: rotateX(90deg) translateY(200px);
+    transform-origin: bottom;
+}
+
+@keyframes rotate
+{
+    0%{transform: rotateY(0deg);}
+    100%{transform: rotateY(360deg);}
+}
+
+
+
+/* fourth -section  */
+
+#fourth-section 
+{
+    background: linear-gradient(to right, #2980B9, #6DD5FA, #FFFFFF);
+}
+.fourth-heading
+{
+    font-size:4rem;
+    padding:0 0 3% 0;
+}
+#fourth-section button
+{
+    margin:2% 0 2%;
+    border:none;
+    padding:8px 12px;
+    border-radius: 10%;
+   
+}
+#fourth-section button:hover
+{
+    outline: none;
+    border:2px solid lightblue;
+}
+.pressed
+{
+    box-shadow: inset 3px 3px 20px 3px orange;
+}
+
+/* fifth section  */
+#fifth-section
+{
+    color:black;
+}
+.love-gif
+{
+    width: 12%;
+    border-radius: 20%;
+    border: none;
+    
+}
+.love-button
+{
+    margin:1rem auto;
+    border: 1px solid lightblue;
+    padding:10px 12px;
+    outline: none;  
+}
+.love-button:hover
+{
+    outline: none;
+}
+.fifth-heading
+{
+    margin: 0 0 2rem;
+    background: linear-gradient(to right,#004FF9,#FFF94C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.love-heading
+{
+    margin: 0 0 3rem;
+    background: linear-gradient(to right,#833ab4,#fd1d1d,#fcb045);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+
+
+/* MEDIS QUERIES  */
+
+@media (min-width:300px) and (max-width:500px) {
+    .heading {
+        font-size: 2rem;
+    }
+    .nav-item:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .heading2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .dice-image {
+        width: 50%;
+    }
+    #first-section .container-fluid {
+      
+        padding: 2% 10% 10%;
+        
+    }
+  
+    #fourth-section
+    {
+        margin-top:10%;
+    }
+    .fourth-heading
+    {
+        font-size:1.5rem;
+        font-weight: bold;
+    }
+    .leap-heading
+    {
+        font-size: 1rem;
+    }
+    .fifth-heading
+    {
+        font-size:1.5rem;
+        font-weight: bold;
+    }
+    #fifth-section label
+    {
+        font-size: 1.5rem;
+    }
+    .love-gif
+{
+    width: 50vw;
+   
+}
+    #third-section
+.rotating-box
+{
+    
+    width:200px;
+    height:200px;
+    margin:20px auto;
+    perspective: 50rem;
+}
+.single
+{
+    animation: rotate 15s  linear infinite;
+    transform-style: preserve-3d;
+}
+.single div
+{
+  
+    position: absolute;
+    
+    
+}
+.single img
+{
+   width:200px;
+   height:200px;
+}
+.front-side
+{
+    transform: translateZ(100px);
+}
+.back-side
+{
+    transform: rotateY(180deg) translateZ(100px);
+}
+.left-side
+{
+    transform: rotateY(90deg) translateX(100px);
+    transform-origin: right;
+}
+.right-side
+{
+    
+    transform: rotateY(-90deg) translateX(-100px);
+    transform-origin: left;
+}
+.top-side
+{
+    transform: rotateX(-90deg) translateY(-100px);
+    transform-origin: top;
+}
+.bottom-side
+{
+    transform: rotateX(90deg) translateY(100px);
+    transform-origin: bottom;
+}
+
+}
